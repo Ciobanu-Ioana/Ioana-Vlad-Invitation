@@ -909,13 +909,13 @@ input:focus, textarea:focus{
 
 .scroll-hint{
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 
     display: flex;
     font-size: 28px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,1);
 
     animation: bounce 1.8s infinite;
 }
