@@ -377,6 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             document.getElementById("invitation-pages").style.display = "block";
             document.getElementById("musicToggle").style.display = "flex";
+            document.getElementById("scroll").style.display = "flex";
             startMusicAfterEnvelope();
         }, 2300);
     });

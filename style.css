@@ -211,7 +211,7 @@ h1,h2,h3{ font-family: 'Playfair Display', serif; font-weight: 600; line-height:
     padding: 16px 18px;
 }
 .parent-card span{
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: clamp(26px, 4vw, 40px);
     color: var(--ink);
 }
@@ -905,4 +905,28 @@ input:focus, textarea:focus{
 
 .music-btn:active {
     transform: scale(0.95);
+}
+
+.scroll-hint{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    font-size: 28px;
+    color: rgba(0,0,0,0.5);
+
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform: translateX(-50%) translateY(0);
+        opacity:.5;
+    }
+    50%{
+        transform: translateX(-50%) translateY(10px);
+        opacity:1;
+    }
 }
