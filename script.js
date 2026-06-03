@@ -272,7 +272,7 @@
 
         try {
             const payload = {
-                guestName: name, attending, accommodation: attending === 'da' ? accommodation : 'nu', adults, kids, message,
+                guestName: name, attending, accommodation: accommodation ? accommodation : 'nu', adults, kids, message,
                 _ua: navigator.userAgent,
                 _ref: document.referrer || location.href,
                 _ip: '' // (opțional) dacă vei popula IP aproximativ din client
