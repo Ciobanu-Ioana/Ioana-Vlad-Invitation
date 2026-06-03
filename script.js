@@ -263,7 +263,7 @@
         // Validări minime
         if(!name){ err.textContent = 'Te rugăm să completezi numele.'; nameInput.focus(); return; }
         if(!attending){ err.textContent = 'Selectează dacă vei participa.'; return; }
-        if(attending === 'da' && !accommodation){ err.textContent = 'Selectează dacă vei avea nevoie de rezervare pentru cazare.'; return; }
+        // if(attending === 'da' && !accommodation){ err.textContent = 'Selectează dacă vei avea nevoie de rezervare pentru cazare.'; return; }
         err.textContent = '';
 
         const btn = form.querySelector('.submit-btn');
